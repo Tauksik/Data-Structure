@@ -132,8 +132,8 @@ int main()
     head->rlink = head;
     for (;;)
     {
-        printf("\n1:\tCreate\n2:\tdisplay\n3:\tinsert lestpos\n4:\tdelete_based on specified value\n5:\texit\n");
-        printf("\nEnter the choice->\n");
+        printf("\n1.Create\n2.Display\n3.Insert at position\n4.Delete a specified value\n5.Exit\n");
+        printf("\nEnter the choice: ");
         scanf("%d", &choice);
         switch (choice)
         {
