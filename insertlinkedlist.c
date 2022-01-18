@@ -52,7 +52,7 @@ int main()
             break;
 
         default:
-            printf("\n Wrong Choice:\n");
+            printf("\n Wrong Choice!\n");
             break;
         }
     }
@@ -64,7 +64,7 @@ void create()
     temp = (struct node *)malloc(sizeof(struct node));
     if (temp == NULL)
     {
-        printf("\nOut of Memory Space:\n");
+        printf("\nOut of Memory Space!\n");
         exit(0);
     }
     printf("\nEnter the data value for the node:\t");
@@ -89,7 +89,7 @@ void display()
     struct node *ptr;
     if (start == NULL)
     {
-        printf("\nList is empty:\n");
+        printf("\nList is empty.\n");
         return;
     }
     else
@@ -109,7 +109,7 @@ void insert_begin()
     temp = (struct node *)malloc(sizeof(struct node));
     if (temp == NULL)
     {
-        printf("\nOut of Memory Space:\n");
+        printf("\nOut of Memory Space!\n");
         return;
     }
     printf("\nEnter the data value for the node:\t");
@@ -131,7 +131,7 @@ void insert_end()
     temp = (struct node *)malloc(sizeof(struct node));
     if (temp == NULL)
     {
-        printf("\nOut of Memory Space:\n");
+        printf("\nOut of Memory Space!\n");
         return;
     }
     printf("\nEnter the data value for the node:\t");
@@ -158,7 +158,7 @@ void insert_pos()
     temp = (struct node *)malloc(sizeof(struct node));
     if (temp == NULL)
     {
-        printf("\nOut of Memory Space:\n");
+        printf("\nOut of Memory Space!\n");
         return;
     }
     printf("\nEnter the position for the new node to be inserted:\t");
@@ -179,7 +179,7 @@ void insert_pos()
             ptr = ptr->next;
             if (ptr == NULL)
             {
-                printf("\nPosition not found:\n");
+                printf("\nPosition not found!\n");
                 return;
             }
         }
@@ -187,4 +187,3 @@ void insert_pos()
         ptr->next = temp;
     }
 }
-
