@@ -14,7 +14,7 @@ void Insert()
     struct node *newnode;
     struct node *temp;
     int s;
-    printf("Enter integer  : ");
+    printf("Enter integer : ");
     scanf("%d", &s);
     newnode = (struct node *)malloc(sizeof(struct node));
     newnode->sem = s;
@@ -22,7 +22,7 @@ void Insert()
     {
         newnode->next = NULL;
         head = newnode;
-        printf("first node of linked list created\n");
+        printf("first node of linked list created.\n");
         c++;
     }
     else
@@ -35,7 +35,7 @@ void Insert()
         temp->next = newnode;
         newnode->next = NULL;
         c++;
-        printf("Node created\n");
+        printf("Node created.\n");
     }
 }
 void Insert2()
@@ -43,10 +43,10 @@ void Insert2()
     struct node *newnode;
     struct node *temp;
     int s, y;
-    printf("enter elements to create list 2\n");
+    printf("Enter elements to create second list \n");
     do
     {
-        printf("Enter integer  : \n");
+        printf("Enter integer : ");
         scanf("%d", &s);
         newnode = (struct node *)malloc(sizeof(struct node));
         newnode->sem = s;
@@ -54,7 +54,7 @@ void Insert2()
         {
             newnode->next = NULL;
             head2 = newnode;
-            printf("first node of linked list created\n");
+            printf("First node of linked list created.\n");
             c++;
         }
         else
@@ -67,9 +67,9 @@ void Insert2()
             temp->next = newnode;
             newnode->next = NULL;
             c++;
-            printf("Node created\n");
+            printf("Node created.\n");
         }
-        printf("do u want to continue adding:0 or 1\n");
+        printf("Do you want to continue adding:0(no) or 1(yes)\n");
         scanf("%d", &y);
     } while (y != 0);
 }
@@ -183,7 +183,7 @@ int main()
     do
     {
 
-        printf("\n1. Insert node \n2. sort node\n3. reverse node\n4.concat 2 lists \n5.exit\n");
+        printf("\n1.Insert node \n2.Sort node\n3.Reverse node\n4.Concat 2 lists \n5.Exit\n");
         printf("\nEnter your choice : ");
         scanf("%d", &choice);
         switch (choice)
