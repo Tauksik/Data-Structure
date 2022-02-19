@@ -21,8 +21,6 @@ int main()
     int choice;
     while (1)
     {
-
-        printf("\n                MENU                             \n");
         printf("\n 1.Create     \n");
         printf("\n 2.Display    \n");
         printf("\n 3.Insert at the beginning    \n");
@@ -32,7 +30,6 @@ int main()
         printf("\n 7.Delete from the end        \n");
         printf("\n 8.Delete from specified position     n");
         printf("\n 9.Exit       \n");
-        printf("\n--------------------------------------\n");
         printf("Enter your choice:\t");
         scanf("%d", &choice);
         switch (choice)
