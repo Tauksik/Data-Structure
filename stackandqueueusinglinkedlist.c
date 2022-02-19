@@ -25,8 +25,6 @@ int main ()
     int choice;   
     while(choice != 7)   
     {     
-        printf("\n*************************Main Menu*****************************\n");  
-        printf("\n=================================================================\n");  
         printf("\n1.insert an element to queue\n2.Delete an element from queue\n3.Display the queue\n4.insert an element to stack\n5.Delete an element from stack\n6.Display the stack\n7.Exit\n");  
         printf("\nEnter your choice : ");  
         scanf("%d",&choice);  
